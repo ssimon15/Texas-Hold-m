@@ -1,0 +1,59 @@
+public class Texasholdm
+{
+  private ArrayList <Card> deck =  new ArrayList <Card>();
+  public Texasholdm()
+  {
+    deck.add(new AceDiamonds());
+    deck.add(new Diamonds2());
+    deck.add(Diamonds3());
+    deck.add(Diamonds4());
+    deck.add(Diamonds5);
+    deck.add(Diamonds6);
+    deck.add(Diamonds7);
+    deck.add(Diamonds8);
+    deck.add(Diamonds9);
+    deck.add(Diamonds10);
+    deck.add(JackDiamonds);
+    deck.add(QueenDiamonds);
+    deck.add(KingDiamonds);
+    deck.add(AceHearts);
+    deck.add(Hearts2);
+    deck.add(Hearts3);
+    deck.add(Hearts4);
+    deck.add(Hearts5);
+    deck.add(Hearts6);
+    deck.add(Hearts7);
+    deck.add(Hearts8);
+    deck.add(Hearts9);
+    deck.add(Hearts10);
+    deck.add(JackHearts);
+    deck.add(QueenHearts);
+    deck.add(KingHearts);
+    deck.add(AceClubs);
+    deck.add(Clubs2);
+    deck.add(Clubs3);
+    deck.add(Clubs4);
+    deck.add(Clubs5);
+    deck.add(Clubs6);
+    deck.add(Clubs7);
+    deck.add(Clubs8);
+    deck.add(Clubs9);
+    deck.add(Clubs10);
+    deck.add(JackClubs);
+    deck.add(QueenClubs);
+    deck.add(KingClubs);
+    deck.add(AceSpades);
+    deck.add(Spades2);
+    deck.add(Spades3);
+    deck.add(Spades4);
+    deck.add(Spades5);
+    deck.add(Spades6);
+    deck.add(Spades7);
+    deck.add(Spades8);
+    deck.add(Spades9);
+    deck.add(Spades10);
+    deck.add(new JackSpades());
+    deck.add(new QueenSpades());
+    deck.add(new KingSpades());
+  }
+}

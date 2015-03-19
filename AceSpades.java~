@@ -1,0 +1,10 @@
+public class AceSpades extends Card
+{
+    AceSpades()
+    {
+      number=14;
+      suit="Spades";
+      name="Ace of Spades";
+    }
+}
+      
