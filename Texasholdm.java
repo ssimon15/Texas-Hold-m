@@ -57,4 +57,8 @@ public class Texasholdm
     deck.add(new QueenSpades());
     deck.add(new KingSpades());
   }
+  public void play()
+  {
+   
+  }
 }
