@@ -1,4 +1,35 @@
+import java.util.Scanner;
 public class HumanPlayer
 {
  private Card[] hand;
+ private int chips;
+ private Scanner input = new Scanner(System.in);
+ private String iNput;
+ 
+ public HumanPlayer(int a)
+ {
+   int chips = a;
+ }
+ 
+ public  play(int a)
+ {
+   int bet = 0;
+   int abet = 0;
+   System.out.println("Bet is $" + a);
+   System.out.println("Would you like to raise? Yes or No.");
+   iNput = input.next();
+   if (iNput.equals("yes"))
+   {
+     System.out.println("How much would you like to rase");
+     abet = input.next;
+     if(abet+a>chips)
+     {
+       bet=abet+a
+     }
+   }
+   if (iNput.equals("no"))
+   {
+     S
+   
+ }
 }
