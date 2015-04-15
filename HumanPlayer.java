@@ -1,15 +1,18 @@
+import java.util.*;
 import java.util.Scanner;
 public class HumanPlayer
 {
- private Card[] hand;
+ private ArrayList <Card> hand = new ArrayList<Card>();
  private int chips;
  private Scanner input = new Scanner(System.in);
  private int iNput;
  private int cbet;
+ private int playernumber;
  
- public HumanPlayer(int a)
+ public HumanPlayer(int a, int b)
  {
    int chips = a;
+   int playernumber=b;
  }
  
  public int getchips()
@@ -21,12 +24,12 @@ public class HumanPlayer
  {
    int b = 4;
    System.out.println("Bet is $" + a);
-   System.out.println("Enter a number Raise=1, Call=2, Fold=2");
+   System.out.println("Enter a number Raise=1, Call=2, Fold=3");
    iNput  = input.nextInt();
    if(iNput==1 || iNput==3 || iNput==2) b = iNput;
    return b;
  }
- public int Raise(int a)
+ public int raise(int a)
  {
    int bet=0;
    boolean complete=false;
@@ -43,11 +46,17 @@ public class HumanPlayer
    bet=cbet;
    return bet;
  }
- public int Call (int a)
+ public int call (int a)
  {
    int bet=0;
-   if(a>chips+cbet)
-   {
-   }
+   if(a>chips+cbet) bet=chips;
+   else bet=a-cbet;
+   return bet;
  }
+ public void dealt(Card a)
+ {
+   hand.add(a);
+ }
+   
+ 
 }

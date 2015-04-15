@@ -31,4 +31,8 @@ public class Card
     else name=myNumber+" of "+mySuit;
     return name;
   }
+  public String toString()
+  {
+    return; 
+  }
 }
