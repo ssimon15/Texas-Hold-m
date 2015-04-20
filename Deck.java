@@ -25,7 +25,9 @@ public class Deck
   }
   public Card deal()
   {
-    return deck.get(0);
+    Card a = deck.get(0);
+    deck.remove(0);
+    return a;
   }
   public void dealt()
   {

@@ -8,6 +8,7 @@ public class HumanPlayer
  private int iNput;
  private int cbet;
  private int playernumber;
+ private boolean folded;
  
  public HumanPlayer(int a, int b)
  {
@@ -57,6 +58,26 @@ public class HumanPlayer
  {
    hand.add(a);
  }
-   
+ public int getcbet()
+ {
+   return cbet;
+ }
+ public void fold()
+ {
+   folded=true;
+ }
+ public boolean folded()
+ {
+   return folded;
+ }
+ public void reset()
+ {
+   while(hand.size()<0)
+   {
+     hand.remove(0);
+   }
+   cbet=0;
+   folded=false;
+ }
  
 }
